@@ -88,13 +88,13 @@ public class ChatServer {
 	
 	@OnClose
 	public void handleClose() {
-		print("나감");
+		print("종료");
 	}
 	
 	@OnError
 	public void handleError(Throwable t,Session session) {
 		list.remove(session);
-		print("시발");
+		print("에러");
 	}
 
 }
