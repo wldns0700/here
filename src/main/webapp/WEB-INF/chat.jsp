@@ -101,8 +101,9 @@ button[type="button"] {
 </div>
 </div>
     <script>
-let url = "wss://930b-221-146-13-64.ngrok-free.app/chat";
+//let url = "wss://930b-221-146-13-64.ngrok-free.app/chat";
 let ws;
+let url = "ws://localhost:8080/chat";
 
 $('#btnConnect').click(function() {
     if ($('#user').val().trim() != '') {
